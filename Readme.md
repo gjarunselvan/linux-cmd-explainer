@@ -2,7 +2,7 @@
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=200&section=header&text=Linux%20Command%20Explainer&fontSize=40&fontColor=fff&animation=twinkling&fontAlignY=36&desc=Understand%20any%20Linux%20command%20instantly%20with%20AI&descAlignY=55&descSize=16" />
 
-[![Live Demo](https://img.shields.io/badge/🚀_Live_Demo-linux--cmd--explainer.vercel.app-00ff9d?style=for-the-badge&logoColor=white)](https://linux.gjarunselvan.online)
+[![Live Demo](https://img.shields.io/badge/%F0%9F%9A%80_Live_Demo-linux.gjarunselvan.online-00ff9d?style=for-the-badge&logoColor=white)](https://linux.gjarunselvan.online)
 [![React](https://img.shields.io/badge/React-18-61DAFB?style=for-the-badge&logo=react&logoColor=white)](https://react.dev)
 [![Vite](https://img.shields.io/badge/Vite-5-646CFF?style=for-the-badge&logo=vite&logoColor=white)](https://vitejs.dev)
 [![Vercel](https://img.shields.io/badge/Deployed_on-Vercel-000?style=for-the-badge&logo=vercel&logoColor=white)](https://vercel.com)

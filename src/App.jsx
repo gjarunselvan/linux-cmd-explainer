@@ -21,38 +21,14 @@ export default function App() {
     setOutput('')
 
     try {
-      const res = await fetch('https://api.anthropic.com/v1/messages', {
+      const res = await fetch('/api/explain', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          model: 'claude-sonnet-4-6',
-          max_tokens: 1000,
-          messages: [{
-            role: 'user',
-            content: `You are a Linux expert and teacher. Explain this Linux command clearly:
-
-${cmd}
-
-Format your response like this:
-📌 WHAT IT DOES
-One sentence summary.
-
-🔍 BREAKDOWN
-Explain each part/flag one by one.
-
-⚠️ WATCH OUT
-Any gotchas or risks.
-
-💡 PRO TIP
-A practical tip or common variation.
-
-Be concise and practical. No jargon.`
-          }]
-        })
+        body: JSON.stringify({ cmd })
       })
 
       const data = await res.json()
-      setOutput(data.content?.[0]?.text || 'Something went wrong.')
+      setOutput(data.result || 'Something went wrong.')
     } catch {
       setOutput('Error connecting. Please try again.')
     } finally {
@@ -140,7 +116,7 @@ Be concise and practical. No jargon.`
         )}
 
         <footer style={styles.footer}>
-          built by gjarunselvan · powered by claude ai
+          built by gjarunselvan · powered by groq ai
         </footer>
       </div>
 
